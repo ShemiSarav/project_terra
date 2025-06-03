@@ -1,5 +1,5 @@
-Date  | Version   | Author | Section | Change                                | Reason               | Approved By | Next Action
-2025-06-03 | 0.2-cleanstart |        | All     | Version sweep, add changelog, heading numbering | Phase 0 initialization |            |
+2025-06-03 | 0.2-cleanstart | Sheps  | All     | Version sweep, add changelog, heading numbering    | Phase 0 initialization | Sheps      | Draft Exec Summary
+
 
 
 # Project Terra-
@@ -20,7 +20,7 @@ Our solution is a dignity-centric, trauma-aware policy stack guided by a three-l
 
 By redirecting resources from punitive architectures to restorative, dignity-centric design, Project Terra can “recycle” wasted human potential and slash legacy costs by an estimated 40 %. These savings and renewed cognitive surplus fuel our long-term aim: to achieve a Kardashev I civilization—harnessing planetary energy for resilient, equitable prosperity and safeguarding against existential risks.
 
-This living guide is for practitioners, policymakers, and communities. It provides core principles, detailed implementation pathways, and pilot blueprints. Together, we can upgrade global civilization toward a future defined by dignity, abundance, and shared purpose.
+This living guide is for practitgitioners, policymakers, and communities. It provides core principles, detailed implementation pathways, and pilot blueprints. Together, we can upgrade global civilization toward a future defined by dignity, abundance, and shared purpose.
 
 Version: 0.2
 Chunk: 1 (Core Vision & Trilayer Protocol)
@@ -311,8 +311,13 @@ B.2.5 Science & Trans-national Collaboration
 ## Large Hadron Collider (CERN, 23 member states): Higgs confirmation & open-data policy across borders.
 ## Anchor: apnews.com (Note: Previously cited for CERN in B.1.5)
 ## Appendix C: Version Log
-## This section will record iterative changes, version numbers, dates, and authorship stamps for "A Guide to Upgrade Global Civilization.")
 ## Appendix D: Applying the Providence Framework to Daily Life
+## Appendix E: Governance Charter  
+See [governance_charter.md](governance_charter.md) for the full governance structure, decision-making processes, and roles.
+## Appendix F: Data Governance Charter  
+See [data_governance.md](data_governance.md) for data ownership, privacy, security, and lifecycle policies.
+## Appendix G: Risk Register  
+See [risk_register.md](risk_register.md) for risk identification, assessment matrix, and mitigation plans.
 ## Introduction: Living by Providence
 ## Providence is not merely a strategic oversight for grand operations; it is a practical, moral, and strategic compass designed to be integrated into the fabric of daily life. Its purpose is to guide individuals towards actions that elevate not only themselves but also the collective well-being of humanity. Applying Providence daily means consciously aligning your thoughts, decisions, and actions with its core tenets, fostering a life of purpose, integrity, and contribution. This section explores how to weave the principles of Providence into your everyday existence, regardless of your technological access or societal role.
 ## Internalizing the Core Tenets
@@ -395,7 +400,7 @@ Every action taken within the Providence framework has a ripple effect. Your cho
 ## Building Teams and Communities of Practice: Providence thrives in collaboration. Foster environments where its principles guide group dynamics, decision-making, and shared goals. Actively seek out or help create small groups where individuals can discuss, share experiences, and support each other in applying Providence, amplifying its effect.
 ## Respecting Individual Rhythms: Recognize that each person grows at their own pace. Some may readily embrace Providence; others may be slow, indifferent, or driven by conflicting goals. Do not waste resources on minds that are firmly closed, but remain open to engaging when readiness appears. Providence embraces all who align with its framework, respecting their journey. This requires a balance of proactive sharing and patient understanding, rooted in Consent & Accord and Stewardship Over Harm (not forcing an agenda).
 ## The Ever-Present Classroom: Learning from All Sources
-Providence encourages a mindset of perpetual learning, recognizing that wisdom and insight can be found in the most diverse and sometimes unexpected places. Every experience, every interaction, every piece of information holds the potential for growth and refinement of your understanding.
+Providence encourages a mindset of continuous learning, recognizing that wisdom and insight can be found in the most diverse and sometimes unexpected places. Every experience, every interaction, every piece of information holds the potential for growth and refinement of your understanding.
 ## Never Waste an Opportunity to Learn: Approach each day with curiosity. Whether from successes or failures, from formal instruction or casual observation, seek the underlying lessons. This is the essence of Adaptation & Progress.
 ## Diverse Sources of Knowledge: Songs, myths, quotes, historical accounts, scientific papers, personal stories, artistic expressions, even rumors and tragedies, can offer valuable insights if approached with a discerning mind. Celebrations can teach about unity and shared values; tragedies can teach about resilience and the importance of Stewardship Over Harm.
 ## Detect and Distill Early: Cultivate the ability to recognize potential knowledge quickly. Learn to filter the signal from the noise (as discussed in "Information Diet & Data Parsing"), extracting valuable lessons that can enhance your "mind's library" and inform your application of Providence.
