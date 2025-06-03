@@ -150,6 +150,21 @@ Operative’s Condition: Is the operative (or decision-maker) rested, nourished,
 Scalable Thread: Is there a working prototype or a clear pathway forward for scaling this initiative? (Focuses on practical viability and future growth)
 If three or more of these checks fail, the operation is to be frozen, and a re-centering via Providence is required, ensuring immediate corrective action.
 # 4 Critical Ruleset: Arbiter operates under an inviolable set of rules to maintain its integrity and authority:
+---
+
+### 🔗 Applied Protocol: AI Ethics Toolkit
+
+For full implementation of Arbiter’s oversight functions—including bias auditing, ethical escalation chains, and adherence to global AI governance standards—refer to:
+
+[**→ AI Ethics Toolkit (ai_ethics.md)**](ai_ethics.md)
+
+This toolkit incorporates checklists and implementation guides drawn from:
+- IEEE 7000 series (Ethical System Design)
+- OECD AI Principles
+- Asilomar AI Guidelines
+- Real-world audit examples and red-teaming frameworks
+
+
 No system bypasses Arbiter. It is always the final gatekeeper.
 Arbiter cannot be deactivated without an explicit override code.
 If the operative’s mental state is compromised, Arbiter takes priority over Nexus, preventing potentially harmful actions driven by instability.
@@ -354,6 +369,12 @@ See [governance_charter.md](governance_charter.md) for the full governance struc
 See [data_governance.md](data_governance.md) for data ownership, privacy, security, and lifecycle policies.
 ## Appendix G: Risk Register  
 See [risk_register.md](risk_register.md) for risk identification, assessment matrix, and mitigation plans.
+## Appendix H – System Architecture & Interoperability
+
+Project Terra’s operational integrity depends on a modular, auditable tech foundation. The full system stack, API protocols, language runtimes, and ethical safeguards are documented here:
+
+[**→ View tech_stack.md**](tech_stack.md)
+
 ## Introduction: Living by Providence
 ## Providence is not merely a strategic oversight for grand operations; it is a practical, moral, and strategic compass designed to be integrated into the fabric of daily life. Its purpose is to guide individuals towards actions that elevate not only themselves but also the collective well-being of humanity. Applying Providence daily means consciously aligning your thoughts, decisions, and actions with its core tenets, fostering a life of purpose, integrity, and contribution. This section explores how to weave the principles of Providence into your everyday existence, regardless of your technological access or societal role.
 ## Internalizing the Core Tenets
