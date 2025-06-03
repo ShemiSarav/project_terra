@@ -1,5 +1,5 @@
-Date  | Version   | Author | Section | Change                                | Reason               | Approved By | Next Action
-2025-06-03 | 0.2-cleanstart |        | All     | Version sweep, add changelog, heading numbering | Phase 0 initialization |            |
+2025-06-03 | 0.2-cleanstart | Sheps  | All     | Version sweep, add changelog, heading numbering    | Phase 0 initialization | Sheps      | Draft Exec Summary
+
 
 
 # Project Terra-
