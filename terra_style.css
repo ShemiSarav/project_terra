@@ -1,0 +1,141 @@
+/* Project Terra Base Style (terra_style.css)
+   Embeds neuro‑aesthetic research into a distributable CSS theme
+   — Grid of Harmony, Prism Palette, Manifesto Gatefold, Accessibility AA  */
+
+/* ----------  Root Tokens  ---------- */
+:root {
+  /* Color Palette (WCAG 2.2–compliant contrast) */
+  --pt-indigo: #4B4DED; /* Providence */
+  --pt-gray:   #2F2F2F; /* Body text */
+  --pt-white:  #F5F5F5; /* Arbiter neutral */
+  --pt-orange: #FF7A00; /* Nexus signal */
+  --pt-red:    #E63946; /* Alert / overrides */
+
+  /* Typography */
+  --font-body: "Inter", "Roboto", sans-serif;
+  --font-title: "EB Garamond", serif;
+  --font-mono: "Fira Code", "JetBrains Mono", monospace;
+
+  /* Layout */
+  --gutter: 6mm;   /* Neural rhythm gap */
+  --radius: 8px;   /* Soft corners for psychological safety */
+}
+
+/* ----------  Global Reset  ---------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { font-size: 16px; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--pt-gray);
+  background-color: var(--pt-white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ----------  Headings  ---------- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-title);
+  font-weight: 600;
+  color: var(--pt-indigo);
+  margin-bottom: 0.5em;
+  letter-spacing: 0.01em;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem;  }
+
+/* ----------  Grid of Harmony  ---------- */
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--gutter);
+  padding: var(--gutter);
+}
+
+.span-1  { grid-column: span 1;  }
+.span-2  { grid-column: span 2;  }
+.span-3  { grid-column: span 3;  }
+.span-4  { grid-column: span 4;  }
+.span-6  { grid-column: span 6;  }
+.span-8  { grid-column: span 8;  }
+.span-12 { grid-column: span 12; }
+
+/* ----------  Callout Boxes (Layer‑coded borders)  ---------- */
+.callout {
+  padding: 1.5rem;
+  border-left: 4px solid var(--pt-indigo);
+  background-color: var(--pt-white);
+  border-radius: var(--radius);
+  margin: 1.5rem 0;
+}
+
+.callout.providence { border-color: var(--pt-indigo); }
+.callout.nexus      { border-color: var(--pt-orange); }
+.callout.arbiter    { border-color: var(--pt-gray);   }
+
+/* ----------  Buttons  ---------- */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  font-family: var(--font-body);
+  text-decoration: none;
+  border-radius: var(--radius);
+  font-weight: 600;
+  transition: transform 0.15s ease-out, box-shadow 0.15s ease-out;
+}
+
+.btn-primary {
+  background-color: var(--pt-indigo);
+  color: var(--pt-white);
+}
+
+.btn:hover   { transform: translateY(-2px); box-shadow: 0 8px 16px rgba(0,0,0,0.08); }
+.btn:active  { transform: none;             box-shadow: 0 4px 8px  rgba(0,0,0,0.06); }
+
+/* ----------  Code & Preformatted  ---------- */
+code, pre {
+  font-family: var(--font-mono);
+  background: #EFEFEF;
+  padding: 0.25em 0.5em;
+  border-radius: var(--radius);
+}
+
+pre {
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+/* ----------  Imagery & Motifs  ---------- */
+.triskel-bg {
+  background-image: url('assets/triskelion.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+  opacity: 0.07;
+}
+
+/* ----------  Print Styles  ---------- */
+@media print {
+  body { background: white; color: var(--pt-gray); }
+  a::after { content: " (" attr(href) ")"; font-size: 0.8em; }
+  .btn { display: none; }
+}
+
+/* ----------  High Contrast Mode ---------- */
+@media (prefers-contrast: more) {
+  :root {
+    --pt-indigo: #0000FF;
+    --pt-orange: #FF6600;
+  }
+  body { background: white; }
+}
