@@ -45,6 +45,27 @@
 - Process for adding new risks: solicit input from all Working Groups via a standardized risk-submission form, per ISO 31000 continuous improvement cycle :contentReference[oaicite:19]{index=19}.  
 - Document lessons learned after each mitigation cycle; publish updates in a living risk log following UNICEF’s transparency model :contentReference[oaicite:20]{index=20}.
 
-## 8. Appendices
-- Templates for risk assessment worksheets.
-- Glossary of risk terms.
+### Appendix H: Risk Assessment Worksheet Template
+
+Below is an ISO 31000-compliant risk assessment worksheet to guide systematic identification, evaluation, and mitigation of risks. Use this as a starting point—customize columns to your project’s context.
+
+| Field                  | Description                                                                                                                                   |
+|------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| **Risk ID**            | Unique identifier (e.g., “R001”, “R002”). :contentReference[oaicite:3]{index=3}                                                                       |
+| **Risk Description**   | Brief narrative of what might go wrong (e.g., “Data breach of Nexus user database”). :contentReference[oaicite:4]{index=4}                                |
+| **Risk Category**      | ISO 31000 categories: Strategic, Operational, Financial, Compliance & Legal, Reputational. :contentReference[oaicite:5]{index=5}                           |
+| **Likelihood (H/M/L)** | Probability of occurrence. Define High/Medium/Low per UN guidance (High = ≥ 60%; Medium = 30–59%; Low = < 30%). :contentReference[oaicite:6]{index=6}    |
+| **Impact (H/M/L)**     | Severity if the risk occurs: High, Medium, Low. Follow ISO 31000:2018 impact criteria (e.g., financial loss threshold, reputational damage scale). :contentReference[oaicite:7]{index=7} |
+| **Current Controls**   | Existing measures in place (e.g., “AES-256 encryption at rest”). :contentReference[oaicite:8]{index=8}                                                     |
+| **Risk Rating**        | Overall rating (High/Medium/Low) calculated by combining Likelihood × Impact via a standard matrix. :contentReference[oaicite:9]{index=9}                  |
+| **Mitigation Actions** | Planned actions to reduce risk (e.g., “Implement multi-factor authentication”). :contentReference[oaicite:10]{index=10}                                      |
+| **Owner**              | Individual or team responsible for risk management (e.g., “Technical Lead”). :contentReference[oaicite:11]{index=11}                                           |
+| **Due Date**           | Deadline for completing the mitigation action (YYYY-MM-DD). :contentReference[oaicite:12]{index=12}                                                    |
+| **Status**             | “Open,” “In Progress,” “Mitigated,” “Closed.” :contentReference[oaicite:13]{index=13}                                                                        |
+
+#### Guidance Notes
+- **Risk ID:** Use a simple incremental scheme to ensure every risk is uniquely identifiable :contentReference[oaicite:14]{index=14}.  
+- **Likelihood & Impact Scoring:** For consistency, adopt the UN’s numerical thresholds (e.g., H = 0.6–1.0 probability; M = 0.3–0.59; L = 0–0.29) aligned with ISO 31000:2018 guidance :contentReference[oaicite:15]{index=15}.  
+- **Current Controls:** Document existing safeguards, referencing UNHCR and UNICEF risk audit examples where encryption, access control, and monitoring logs are mandatory :contentReference[oaicite:16]{index=16}.  
+- **Mitigation Actions:** Use SMART criteria (Specific, Measurable, Achievable, Relevant, Time-bound) to define actions as recommended by UN ERM best practices :contentReference[oaicite:17]{index=17}.  
+- **Risk Owner:** Assign a clear owner to ensure accountability, as recommended by ISO 31000 and UN policy :contentReference[oaicite:18]{index=18}.  
