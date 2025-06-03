@@ -374,6 +374,13 @@ See [risk_register.md](risk_register.md) for risk identification, assessment mat
 Project Terra’s operational integrity depends on a modular, auditable tech foundation. The full system stack, API protocols, language runtimes, and ethical safeguards are documented here:
 
 [**→ View tech_stack.md**](tech_stack.md)
+## Appendix G – Local Adaptation Template
+
+To ensure Project Terra can be deployed with cultural intelligence and legal integrity, a localized adaptation protocol is provided:
+
+[**→ View adaptation_template.md**](adaptation_template.md)
+
+This template guides regional operatives through regulatory alignment, cultural translation, and scoped pilot deployment—without compromising Providence’s core directives or Arbiter’s ethical safeguards.
 
 ## Introduction: Living by Providence
 ## Providence is not merely a strategic oversight for grand operations; it is a practical, moral, and strategic compass designed to be integrated into the fabric of daily life. Its purpose is to guide individuals towards actions that elevate not only themselves but also the collective well-being of humanity. Applying Providence daily means consciously aligning your thoughts, decisions, and actions with its core tenets, fostering a life of purpose, integrity, and contribution. This section explores how to weave the principles of Providence into your everyday existence, regardless of your technological access or societal role.
