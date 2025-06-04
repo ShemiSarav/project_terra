@@ -1,141 +1,234 @@
-/* Project Terra Base Style (terra_style.css)
-   Embeds neuro‑aesthetic research into a distributable CSS theme
-   — Grid of Harmony, Prism Palette, Manifesto Gatefold, Accessibility AA  */
+/* ─── Terra Base Reset & Foundation ───────────────────────────────────────────────── */
 
-/* ----------  Root Tokens  ---------- */
-:root {
-  /* Color Palette (WCAG 2.2–compliant contrast) */
-  --pt-indigo: #4B4DED; /* Providence */
-  --pt-gray:   #2F2F2F; /* Body text */
-  --pt-white:  #F5F5F5; /* Arbiter neutral */
-  --pt-orange: #FF7A00; /* Nexus signal */
-  --pt-red:    #E63946; /* Alert / overrides */
-
-  /* Typography */
-  --font-body: "Inter", "Roboto", sans-serif;
-  --font-title: "EB Garamond", serif;
-  --font-mono: "Fira Code", "JetBrains Mono", monospace;
-
-  /* Layout */
-  --gutter: 6mm;   /* Neural rhythm gap */
-  --radius: 8px;   /* Soft corners for psychological safety */
-}
-
-/* ----------  Global Reset  ---------- */
-*, *::before, *::after {
-  box-sizing: border-box;
+/* Reset margins/padding on common elements */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
   margin: 0;
   padding: 0;
+  border: 0;
+  vertical-align: baseline;
 }
 
-html { font-size: 16px; }
+/* Base HTML5 display settings */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
 
+/* Force‐center everything in a max‐width container */
+body > * {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;   /* horizontal breathing room */
+  box-sizing: border-box;
+}
+
+/* Set default body font, background, and color */
 body {
-  font-family: var(--font-body);
-  color: var(--pt-gray);
-  background-color: var(--pt-white);
+  font-family: "Inter", sans-serif;
   line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
+  color: var(--pt-gray, #2F2F2F);
+  background-color: var(--pt-white, #F5F5F5);
+  padding: 2rem 0;    /* vertical padding; horizontal handled above */
 }
 
-/* ----------  Headings  ---------- */
+/* Links */
+a {
+  color: var(--pt-orange, #FF7A00);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Headings: size, color, spacing */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-title);
-  font-weight: 600;
-  color: var(--pt-indigo);
-  margin-bottom: 0.5em;
-  letter-spacing: 0.01em;
+  color: var(--pt-indigo, #4B4DED);
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+h1 { font-size: 2.5rem; margin-top: 2rem; }
+h2 { font-size: 2rem; margin-top: 1.75rem; }
+h3 { font-size: 1.75rem; margin-top: 1.5rem; }
+h4 { font-size: 1.5rem; margin-top: 1.25rem; }
+h5 { font-size: 1.25rem; margin-top: 1rem; }
+h6 { font-size: 1rem; margin-top: 0.75rem; }
+
+/* Paragraphs */
+p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
 }
 
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.75rem; }
-h4 { font-size: 1.5rem; }
-h5 { font-size: 1.25rem; }
-h6 { font-size: 1rem;  }
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid var(--pt-indigo, #4B4DED);
+  padding-left: 1rem;
+  margin: 1rem 0;
+  color: #555;
+  font-style: italic;
+}
 
-/* ----------  Grid of Harmony  ---------- */
-.container {
+/* ─── Terra 12-Column Grid & Container ───────────────────────────────────────── */
+
+/* Container to center content and set max-width (alternative hook if HTML is modified) */
+.terra-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* 12-column CSS Grid */
+.terra-row {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: var(--gutter);
-  padding: var(--gutter);
+  gap: 1rem;
 }
 
-.span-1  { grid-column: span 1;  }
-.span-2  { grid-column: span 2;  }
-.span-3  { grid-column: span 3;  }
-.span-4  { grid-column: span 4;  }
-.span-6  { grid-column: span 6;  }
-.span-8  { grid-column: span 8;  }
-.span-12 { grid-column: span 12; }
+/* Generic column spanning */
+.terra-col-1  { grid-column: span 1; }
+.terra-col-2  { grid-column: span 2; }
+.terra-col-3  { grid-column: span 3; }
+.terra-col-4  { grid-column: span 4; }
+.terra-col-6  { grid-column: span 6; }
+.terra-col-12 { grid-column: span 12; }
 
-/* ----------  Callout Boxes (Layer‑coded borders)  ---------- */
-.callout {
-  padding: 1.5rem;
-  border-left: 4px solid var(--pt-indigo);
-  background-color: var(--pt-white);
-  border-radius: var(--radius);
-  margin: 1.5rem 0;
+/* Example: full-width content */
+.full-width {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding: 0 1rem;
 }
 
-.callout.providence { border-color: var(--pt-indigo); }
-.callout.nexus      { border-color: var(--pt-orange); }
-.callout.arbiter    { border-color: var(--pt-gray);   }
+/* ─── Tables & Code Blocks ─────────────────────────────────────────────────── */
 
-/* ----------  Buttons  ---------- */
-.btn {
-  display: inline-block;
-  padding: 0.75rem 1.25rem;
-  font-family: var(--font-body);
-  text-decoration: none;
-  border-radius: var(--radius);
-  font-weight: 600;
-  transition: transform 0.15s ease-out, box-shadow 0.15s ease-out;
-}
-
-.btn-primary {
-  background-color: var(--pt-indigo);
-  color: var(--pt-white);
-}
-
-.btn:hover   { transform: translateY(-2px); box-shadow: 0 8px 16px rgba(0,0,0,0.08); }
-.btn:active  { transform: none;             box-shadow: 0 4px 8px  rgba(0,0,0,0.06); }
-
-/* ----------  Code & Preformatted  ---------- */
-code, pre {
-  font-family: var(--font-mono);
-  background: #EFEFEF;
-  padding: 0.25em 0.5em;
-  border-radius: var(--radius);
-}
-
-pre {
+/* Basic table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  display: block;       /* allow horizontal scroll */
   overflow-x: auto;
+}
+th, td {
+  border: 1px solid #DDD;
+  padding: 0.75rem;
+  text-align: left;
+}
+thead th {
+  background-color: var(--pt-indigo, #4B4DED);
+  color: #FFF;
+}
+
+/* Striped row effect */
+tbody tr:nth-child(odd) {
+  background-color: #FAFAFA;
+}
+
+/* Code blocks */
+pre, code {
+  font-family: "Fira Code", monospace;
+  background-color: #F0F0F0;
+  padding: 0.5rem;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+pre {
+  margin: 1rem 0;
+}
+
+/* ─── Callouts & Alerts ───────────────────────────────────────────────────── */
+
+/* Operational notes (Nexus) */
+.pt-nexus-callout {
+  border-left: 4px solid var(--pt-orange, #FF7A00);
+  background: #FFF8F0;
   padding: 1rem;
+  margin: 1.5rem 0;
+  border-radius: 6px;
+  font-size: 0.95rem;
 }
 
-/* ----------  Imagery & Motifs  ---------- */
-.triskel-bg {
-  background-image: url('assets/triskelion.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 40%;
-  opacity: 0.07;
+/* Providence excerpts */
+.pt-providence-quote {
+  border-left: 4px solid var(--pt-indigo, #4B4DED);
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: #333;
 }
 
-/* ----------  Print Styles  ---------- */
-@media print {
-  body { background: white; color: var(--pt-gray); }
-  a::after { content: " (" attr(href) ")"; font-size: 0.8em; }
-  .btn { display: none; }
+/* Ethical/override warnings (Arbiter) */
+.pt-arbiter-note {
+  border-left: 4px solid var(--pt-gray, #2F2F2F);
+  background: #F5F5F5;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-radius: 6px;
+  color: #555;
 }
 
-/* ----------  High Contrast Mode ---------- */
-@media (prefers-contrast: more) {
-  :root {
-    --pt-indigo: #0000FF;
-    --pt-orange: #FF6600;
+/* ─── Additional Utility Classes ───────────────────────────────────────────── */
+
+/* Center text */
+.text-center {
+  text-align: center;
+}
+
+/* Highlight important inline text */
+.inline-highlight {
+  background-color: var(--pt-indigo);
+  color: #FFF;
+  padding: 0.2rem 0.4rem;
+  border-radius: 2px;
+}
+
+/* Spacing helpers */
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+
+/* ─── Color Variable Definitions ───────────────────────────────────────────── */
+
+/* Define root color tokens to ensure consistency */
+:root {
+  --pt-indigo: #4B4DED;    /* Providence primary */
+  --pt-gray:   #2F2F2F;    /* Body text */
+  --pt-white:  #F5F5F5;    /* Background neutral */
+  --pt-orange: #FF7A00;    /* Nexus accent */
+}
+
+/* ─── Responsive Tweaks ─────────────────────────────────────────────────────── */
+
+/* On small screens, reduce padding and adjust font sizes */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem 0;
   }
-  body { background: white; }
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.75rem; }
+  .terra-row {
+    display: block; /* collapse grid to single column */
+  }
+  .full-width {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
+
+pre { overflow-x: auto; }
+
+table td.numeric, table th.numeric { text-align: right; }
