@@ -1,0 +1,32 @@
+﻿name: Build & Lint Docs
+
+on:
+  push:
+    branches:
+      - master
+      - refine-v0.2
+
+jobs:
+  markdown-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo npm install -g markdownlint-cli
+      - run: markdownlint "**/*.md" --config .markdownlint.json
+
+  build-docs:
+    runs-on: ubuntu-latest
+    needs: markdown-lint
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-xetex
+      - run: pandoc Project_Terra_NoDuplicates.md --from markdown --pdf-engine=xelatex --output Project_Terra_v0.2.pdf
+      - run: pandoc Project_Terra_NoDuplicates.md --from markdown --output Project_Terra_v0.2.docx
+      - uses: actions/upload-artifact@v3
+        with:
+          name: ProjectTerra-docs
+          path: |
+            Project_Terra_v0.2.pdf
+            Project_Terra_v0.2.docx
