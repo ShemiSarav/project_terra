@@ -1,10 +1,10 @@
-# Project Terra v0.5
+# Project Terra v0.7
 
 ***A Guide to Upgrade Global Civilization: Enhanced Framework for Implementation***
 
 *Revision Date: June 5, 2025*
 
-*Version: 0.5 (Supersedes v0.4)*
+*Version: 0.7 (Supersedes v0.6)*
 
 *Lead Strategist: Sheps*
 
